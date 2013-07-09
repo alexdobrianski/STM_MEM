@@ -54,7 +54,7 @@ file_006=no
 file_007=no
 file_008=no
 [FILE_INFO]
-file_000=STM_MEM.c
+file_000=STM_STMTR.c
 file_001=commc0.h
 file_002=commc1.h
 file_003=commc2.h

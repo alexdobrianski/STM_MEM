@@ -43,6 +43,11 @@
 #endif
 #endif
 
+////////////////////////////////////////////////////////////////////////
+// disable I2C proc
+////////////////////////////////////////////////////////////////////////
+#define NO_I2C_PROC 1
+
 
 
 
@@ -225,7 +230,9 @@ void Reset_device(void)
     //GIE = 1;     // bit 7 GIE: Global Interrupt Enable bit
                  // 1 = Enables all unmasked interrupts
                  // 0 = Disables all interrupts
+#ifndef NO_I2C_PROC
     enable_I2C();
+#endif
     TIMER0_INT_FLG = 0; // clean timer0 interrupt
     TIMER0_INT_ENBL = 0; // diasable timer0 interrupt
     TMR1IF = 0; // clean timer0 interrupt
