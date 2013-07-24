@@ -43,10 +43,23 @@
 #endif
 #endif
 
+// will be responce on command "=<unit><cmd>"
+#define RESPONCE_ON_EQ
+
+// CMD switch processed in interrupt
+#define NEW_CMD_PROC 1
+
+// sync clock / timeral  support
+//#define SYNC_CLOCK_TIMER  
+
+
+
 ////////////////////////////////////////////////////////////////////////
 // disable I2C proc
 ////////////////////////////////////////////////////////////////////////
 #define NO_I2C_PROC 1
+
+
 
 
 
